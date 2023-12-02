@@ -3,7 +3,7 @@ const fs = require('fs').promises;
 async function getStringFromLines() {
     let allLines = "";
     let doubleDigits = [];
-    const file = await fs.open('../input_files/input1.txt');
+    const file = await fs.open('../input_files/day1/input1.txt');
     for await (const line of file.readLines()) {
         const lineInts = getIntegersFromString(line);
         if(lineInts.length > 1){

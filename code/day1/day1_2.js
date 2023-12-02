@@ -14,7 +14,7 @@ async function getStringFromLines() {
         [8, 'eight'],
         [9, 'nine']
     ]);
-    const file = await fs.open('../input_files/input1.txt');
+    const file = await fs.open('../input_files/day1/input1.txt');
     for await (const line of file.readLines()) {
         // convert the spelling of the digits to digits before proceeding
         const wordsGone = cleanData(digitSpellingMap, line);
