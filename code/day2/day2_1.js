@@ -16,16 +16,6 @@ async function getStringFromLines() {
     }
     return validGameSum;
 }
-// account for missing words (default  0)
-// Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red
-// Game 4:
-// 1g,3r,6b;    true or false
-// 3g,6r;       true or false
-// 3g,15b,14r   true or false
-
-// parse game ID:
-// parse hands ;
-// parse 
 
 function isGameValid(diceMap, line) {
     // clean line
